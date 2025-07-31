@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escrito</title>
+  <link rel="stylesheet" href="escrito.css"/>
+</head>
+<body>
+  <header>
+    <h1>Rock Fest</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Entradas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="formu">
+      <h2>Reserva 2025</h2>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="Nombre" id="nombre" required minlength="3" maxlength="10" />
+
+      <br /><br />
+
+      <label for="cantidad">Cantidad de entradas:</label>
+      <select id="cantidad" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <br /><br />
+
+      <label for="tipoEntrada">Tipo de entrada:</label>
+      <select id="tipoEntrada" required>
+        <option value="gen">General - $1000</option>
+        <option value="vip">Vip - $2000</option>
+        <option value="backstage">Backstage - $1500</option>
+      </select>
+
+      <br /><br />
+
+      <label for="descuento">Código de descuento:</label>
+      <input type="text" id="descuento" placeholder="Ingresa ROCK10" minlength="6" />
+
+      <br /><br /> 
+
+      <button type="button" id="btn_calcular">Calcular total</button>
+   
+
+    <div class="resultados" id="resultado">
+      <h2 id="resultado_Formu"></h2>
+    </div>
+  </main>
+   </form>
+
+  <script src="escrito.js"></script>
+</body>
+</html>
